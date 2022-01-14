@@ -2,20 +2,19 @@ export class Actor {
   id?: string;
   onAir: boolean;
   name: string;
+  born: string;
   firstName: string;
-  death: string;
   nationality: string;
   bestMovie: string;
   picture: string;
   resume: string;
   affiche: string;
 
-
   constructor() {
     this.onAir = false;
     this.name = '';
     this.firstName = '';
-    this.death = '';
+    this.born = '';
     this.nationality = '';
     this.bestMovie = '';
     this.picture = '';
