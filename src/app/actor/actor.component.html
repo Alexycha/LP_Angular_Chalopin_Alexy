@@ -1,0 +1,21 @@
+<!-- <li [ngClass]=" { 'list-group-item': true,
+'list-group-item-info': filmOnAir == true,
+'list-group-item-warning': filmOnAir == false }"> -->
+<div class="presentation" [ngStyle]="{ 'background-image': 'linear-gradient(rgba(0, 0, 0, 0.3),
+rgba(0, 0, 0, 0.3)),url(' + actorPicture + ')'}">
+<!--     <img class="affiche" [src]="actorPicture">
+ -->    
+<!--       <div class="onAir" *ngIf="filmOnAir == false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Blu-ray_Disc.svg/1200px-Blu-ray_Disc.svg.png">
+      </div>
+      <div class="onAir" *ngIf="filmOnAir == true">
+        <img src="https://fr.web.img3.acsta.net/r_654_368/newsv7/21/04/29/14/22/0010719.jpg">
+      </div> -->
+      <div class="data">
+        <h3>{{actorfirstName}} {{ actorName }}</h3>
+      <button class="details"><a [routerLink]="['/details', id]" class="test">Détails</a></button>
+      <button class="update"><a [routerLink]="['/modif', id]" class="test">Modifier</a></button>
+     <button class="delete" (click)="suppr()">Supprimer</button>
+      </div>
+      </div>
+<!-- </li> -->

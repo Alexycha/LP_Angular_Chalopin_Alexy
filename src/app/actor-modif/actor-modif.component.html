@@ -1,0 +1,46 @@
+<div class="page">
+
+<div class="row change" *ngIf="change">
+
+    Les changements ont bien été enregistrées.
+</div>
+  <div class="form">
+<div *ngIf="actor">
+      <div class="data">
+        <label>Nom</label><br>
+        <input type="text" class="form-control" [(ngModel)]="actor.name">
+      </div>
+    </div>
+    <div class="data">
+        <label>Prénom</label><br>
+        <input type="text" class="form-control" [(ngModel)]="actor.firstName">
+      </div>
+      <div class="data">
+        <label>Nationalité</label><br>
+        <input type="text" class="form-control" [(ngModel)]="actor.nationality">
+      </div>
+      <div class="data">
+        <label>Plus grand film</label><br>
+        <input type="text" class="form-control" [(ngModel)]="actor.bestMovie">
+      </div>
+      <div class="data">
+        <label>Affiche du film</label><br>
+        <input type="text" class="form-control" [(ngModel)]="actor.affiche">
+      </div>
+      <div class="data">
+        <label>Photographie</label> <br>
+        <input type="text" class="form-control" [(ngModel)]="actor.picture">
+      </div>
+      <div class="genre">
+              <input type="radio" name="onAir" class="form-check-input" [value]="true" [(ngModel)]="actor.onAir"> <label class="form-check-label">Acteur</label>
+              <input type="radio" name="onAir" class="form-check-input" [value]="false" [(ngModel)]="actor.onAir"> <label class="form-check-label">Actrice</label>
+            </div>
+      <div class="data">
+        <label>Présentation</label><br>
+        <textarea name="synopsis" cols="30" rows="10" class="form-control" [(ngModel)]="actor.resume"></textarea>
+      </div>
+      <div class="submit">
+        <button class="btn btn-outline-success" (click)="modif()">Modifier</button>
+      </div>
+</div>
+</div>

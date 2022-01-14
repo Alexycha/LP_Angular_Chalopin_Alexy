@@ -1,0 +1,9 @@
+.page {
+  background-color: rgb(238, 238, 238);
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

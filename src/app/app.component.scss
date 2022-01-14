@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background-color: rgb(34, 34, 34);
+
+  .home {
+    a {
+      text-decoration: none;
+      color: white;
+      padding-left: 20px;
+    }
+
+    transition: ease-in-out 0.3s;
+  }
+
+  .home:hover {
+    transform: scale(1.1);
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    padding: 4px 12px;
+
+    li {
+      list-style: none;
+      cursor: pointer;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 20px;
+      border-radius: 15px;
+      transition: ease-in-out .3s;
+    }
+
+    a:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+    <div class="page">
+    <div class="form">
+      
+    <div class="data">
+      <label>Nom</label><br>
+      <input type="text" class="form-control" [(ngModel)]="actor.name">
+    </div>
+    <div class="data">
+      <label>Prénom</label><br>
+      <input type="text" class="form-control" [(ngModel)]="actor.firstName">
+  </div>
+    <div class="data">
+      <label>Nationalité</label><br>
+      <input type="text" class="form-control" [(ngModel)]="actor.nationality">
+    </div>
+    <div class="data">
+      <label>Plus grand film</label><br>
+      <input type="text" class="form-control" [(ngModel)]="actor.bestMovie">
+    </div>
+    <div class="data">
+      <label>Affiche du film</label><br>
+      <input type="text" class="form-control" [(ngModel)]="actor.affiche">
+    </div>
+
+    <div class="data">
+      <label>Photographie</label> <br>
+      <input type="text" class="form-control" [(ngModel)]="actor.picture">
+    </div>
+
+    <div class="genre">
+            <input type="radio" name="onAir" [value]="true" [(ngModel)]="actor.onAir"> <label class="form-check-label">Acteur</label>
+            <input type="radio" name="onAir" [value]="false" [(ngModel)]="actor.onAir"> <label class="form-check-label">Actrice</label>
+    </div>
+
+
+
+    <div class="data">
+      <label>Présentation</label><br>
+      <textarea name="synopsis" cols="30" rows="10" class="form-control" [(ngModel)]="actor.resume"></textarea>
+    </div>
+
+
+    <div class="submit">
+      <button class="btn btn-outline-success" (click)="add()">Ajouter</button>
+    </div>
+  </div>
+</div>

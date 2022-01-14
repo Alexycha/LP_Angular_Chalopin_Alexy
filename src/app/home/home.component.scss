@@ -1,0 +1,76 @@
+.allpage {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.89), rgb(0, 0, 0)),
+    url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Audrey_Hepburn_and_Gregory_Peck_on_Vespa_in_Roman_Holiday_trailer.jpg/1024px-Audrey_Hepburn_and_Gregory_Peck_on_Vespa_in_Roman_Holiday_trailer.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+  .title {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    padding-top: 10%;
+
+    h1 {
+      font-size: 55px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+  .pic {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+      height: 300px;
+      width: 200px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      transition: ease-in-out 0.5s;
+    }
+
+    .one:hover,
+    .two:hover,
+    .three:hover,
+    .four:hover,
+    .five:hover {
+      transform: scale(1.04);
+    }
+
+    .one {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Romy_Schneider_1973.jpg/640px-Romy_Schneider_1973.jpg');
+    }
+
+    .two {
+      background-image: url('https://m.media-amazon.com/images/I/61XRs1Vi0wL._AC_SX466_.jpg');
+    }
+
+    .three {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ef/Gabin_Harcourt_1948.jpg');
+    }
+
+    .four {
+      background-image: url('https://cdn.artphotolimited.com/images/5e43d752bd40b8182cd48126/1000x1000/claudia-cardinale-1960.jpg');
+    }
+
+    .five {
+      background-image: url('https://cdn.artphotolimited.com/images/5b9fc1ecac06024957be8806/1000x1000/clint-eastwood-en-1962.jpg');
+    }
+
+  }
+
+}

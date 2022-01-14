@@ -1,0 +1,19 @@
+<div class="page">
+<div class="presentation">
+    <div class="picture">
+      <img class="photo" [src]="actor.picture">
+      </div>
+        <div class="data">
+          <h3>{{actor.firstName}} {{ actor.name }}</h3>
+          <ul>
+            <li><b>Naissance: </b>{{ actor.born }}  Mort : {{ actor.death }} </li>
+            <li><b>Nationalité:</b> {{actor.nationality}} </li>
+            <li><b>Résumé :</b> {{actor.resume}} </li>
+            <div class="bestMovie">
+            <li><b>Film notable:</b><br> {{actor.bestMovie}} </li>
+            <li> <img class="affiche" [src]="actor.affiche"></li>
+              </div>
+          </ul>
+       </div>
+        </div>
+    </div>

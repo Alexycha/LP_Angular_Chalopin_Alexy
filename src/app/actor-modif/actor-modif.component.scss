@@ -1,0 +1,61 @@
+.change {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://www.premiere.fr/sites/default/files/styles/scale_crop_border_1280x720/public/2020-05/1_2.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  .form {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 75%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.541);
+    border-radius: 10px;
+    overflow-y: scroll;
+
+    .data {
+      text-align: center;
+
+      input {
+        position: relative;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        background-color: rgb(247, 247, 247);
+        margin-bottom: 10px;
+      }
+
+      .genre {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+      }
+
+      #resume {
+        width: 50%;
+        background-color: rgb(247, 247, 247);
+
+      }
+    }
+  }
+}

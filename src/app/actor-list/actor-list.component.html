@@ -1,0 +1,15 @@
+<div class="page">
+<div class="container" *ngIf="actors">
+  <app-actor *ngFor="let actor of actors; let i = index" 
+  [actorName]="actor.name" 
+  [actorOnAir]="actor.onAir"
+  [actorfirstName]="actor.firstName"
+  [actorBestMovie]="actor.bestMovie"
+  [actorBorn]="actor.born"
+  [actorDeath]="actor.death"
+  [actorPicture]="actor.picture"
+  [actorResume]="actor.resume"
+  [actorTime]="actor.time"
+  [id]="actor.id"></app-actor>
+</div>
+</div>
