@@ -1,6 +1,7 @@
 # Projet Angular
 Projet CRUD, où ajouter, modifier, supprimer, lire des données.
 Sur le thème des légendes du cinéma.
+Lancer la commande NPM install, puis "ng serve" pour lancer le serveur.
 
 # FirstProject
 
