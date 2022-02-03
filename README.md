@@ -1,3 +1,7 @@
+# Projet Angular
+Projet CRUD, où ajouter, modifier, supprimer, lire des données.
+Sur le thème des légendes du cinéma.
+
 # FirstProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
